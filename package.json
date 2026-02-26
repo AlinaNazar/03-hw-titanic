@@ -1,0 +1,19 @@
+{
+  "name": "03-hw-titanic",
+  "version": "1.0.0",
+  "description": "Statistic from 'Titanic'",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "Alina",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0"
+  }
+}
