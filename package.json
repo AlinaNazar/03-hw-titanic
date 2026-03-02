@@ -4,7 +4,7 @@
   "description": "Statistic from 'Titanic'",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "get titanic stats": "node ./index.js"
   },
   "keywords": [],
   "author": "Alina",
