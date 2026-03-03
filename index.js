@@ -15,7 +15,7 @@ function maybeValueNullOrNumber(values) {
     return values;
 }
 
-const file = fs.createReadStream('./train.csv', 'utf-8');
+const file = fs.createReadStream(new URL('./train.csv',import.meta.url), 'utf-8');
 const reader = readline.createInterface({
     input: file,
     crlfDelay: Infinity,
@@ -45,4 +45,5 @@ reader.on('close', () => {
     console.log(stats.survivedByGender);
     console.log(stats.survivedChildren);
 })
-
+console.log("cwd:", process.cwd());
+console.log("script:", import.meta.url);
